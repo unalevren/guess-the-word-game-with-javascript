@@ -7,7 +7,51 @@
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="style.css" />
+        <title>Guess The Word Game</title>
     </head>
-    <body></body>
+    <body>
+        <div class="wrapper">
+            <h1>Guess The Word</h1>
+            <div class="content">
+                <input
+                    type="text"
+                    class="type-input"
+                    maxlength="1" />
+                <div
+                    class="word"
+                    id="word"></div>
+                <div class="info">
+                    <p class="guess">Guesses: <span></span></p>
+                    <p class="wrong">Mistakes: <span></span></p>
+                    <p class="hint">Hint: <span></span></p>
+                </div>
+                <div class="buttons">
+                    <button class="reset">Reset Game</button>
+                    <button class="show-hint">Show Hint</button>
+                </div>
+                <div class="contacts">
+                    <a
+                        target="_blank"
+                        href="https://github.com/unalevren/"
+                        ><img
+                            class="github"
+                            src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+                    /></a>
+                    <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/evrenunall/"
+                        ><img
+                            class="linkedin"
+                            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                    /></a>
+                </div>
+            </div>
+        </div>
+
+        <script src="words-db.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
